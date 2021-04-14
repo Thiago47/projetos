@@ -1,0 +1,260 @@
+/*importando estilo de Letra*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*seletor universal*/
+*{
+    margin: 0;/*margem*/
+    padding: 0;/*define uma a distância entre o conteúdo de um elemento*/
+    box-sizing: border-box;/*utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights)*/
+    outline: none;/*contorno*/
+    list-style: none;/*estilo de lista*/
+    text-decoration: none;/*decoração de texto*/
+    font-family: 'Roboto', sans-serif;/*família de fontes*/
+}
+
+/*Contéudo da Página*/
+body{
+	background: #fafafa;/*fundo*/
+	font-size: 14px;/*tamanho da fonte*/
+	width: 100%; /*largura*/
+	min-height: 100vh;
+	margin: 0; /*margem*/
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+/*.embrulho */
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+/* bloco do celular*/
+.block-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.block-phone img{
+    height: 43rem;/*altura*/
+}
+/*.embrulho .cabeçalho*/
+.wrapper .block-login{
+	max-width: 350px;/*largura máxima*/
+	width: 100%;/*largura*/
+	height: auto;/*altura*/
+	margin: 50px auto;/*margem*/
+}
+
+/*.embrulho .cabeçalho .principal,embrulho .inscrever-se*/
+.wrapper .block-login .top,
+.wrapper .signup{
+	
+	background: #fff;/*fundo*/
+    border: 1px solid #e6e6e6;/*borda de um elemento*/
+    border-radius: 1px;/*bordas arredondadas*/
+    padding: 40px 40px 20px;/*define uma a distância entre o conteúdo de um elemento*/
+}
+
+/*.embrulho .cabeçalho .logotipo imagem*/
+.wrapper .block-login .logo img{
+	display: block;/*exibição: bloco*/
+	margin: 0 auto 35px;/*margem*/
+}
+
+/*.embrulho .cabeçalho .formulário .campo_de_entrada*/
+.wrapper .block-login .form .input_field{
+	margin-bottom: 5px;/*margem inferior*/
+}
+
+/*.embrulho .cabeçalho .formulário .campo_de_entrada .entrada*/
+.wrapper .block-login .form .input_field .input{
+	width: 100%;/*largura*/
+	background: #fafafa;/*fundo*/
+	border: 1px solid #efefef;/*borda de um elemento*/
+	font-size: 12px;/*tamanho da fonte*/
+	border-radius: 3px;/*bordas arredondadas*/
+	color: #262626;/*cor*/
+	padding: 10px;/*define uma a distância entre o conteúdo de um elemento*/
+}
+
+/*.embrulho .cabeçalho .formulário .campo_de_entrada .entrada: foco*/
+.wrapper .block-login .form .input_field .input:focus{
+	border: 1px solid #b2b2b2;/*borda de um elemento*/
+}
+
+/*.embrulho .cabeçalho .formulário .botão*/
+.wrapper .block-login .form .btn{
+	margin: 10px 0;/*margem*/
+	background-color: #3897f0;/*cor de fundo*/
+    border: 1px solid #3897f0;/*bordas*/
+    border-radius: 4px;/*bordas arredondadas*/
+    text-align: center;/*alinhamento de texto*/
+    padding: 5px;/*define uma a distância entre o conteúdo de um elemento*/
+}
+
+/*.embrulho .cabeçalho .formulário .botão âncora*/
+.wrapper .block-login .form .btn a{
+	color: #fff;
+	display: block;
+}
+
+/*.embrulho .cabeçalho .ou*/
+.wrapper .block-login .or{
+	display: flex;/*exibição: flexível*/
+	justify-content: space-between;/*justificar-conteúdo: espaço entre*/
+	align-items: center;/*alinhar-itens: centro*/
+	height: 15px;/*altura*/
+	margin: 15px 0 20px;/*margem*/
+}
+
+/*.embrulho .cabeçalho .ou .linha*/
+.wrapper .block-login .or .line{
+	width: 105px;/*largura*/
+	height: 2px;/*altura*/
+	background: #efefef/*fundo*/
+}
+
+/*.embrulho .cabeçalho .ou .parágrafo*/
+.wrapper .block-login .or p{
+	color: #999;/*cor*/
+	font-size: 12px;/*tamanho da fonte*/
+}
+
+/*.embrulho .diferenciar .Facebook*/
+.wrapper .dif .fb{
+	display: flex;/*exibição: flexível*/
+	justify-content: center;/*justificar-conteúdo: espaço entre*/
+	align-items: center;/*alinhar-itens: centro*/
+}
+
+/*.embrulho .diferenciar .Facebook imagem*/
+.wrapper .dif .fb img{
+	width: 16px;/*largura*/
+	height: 16px;/*altura*/
+}
+
+/*.embrulho .diferenciar .Facebook parágrafo*/
+.wrapper .dif  .fb p{
+	color: #385185;/*cor*/
+	font-weight: 500;/*especifica o peso ou a intensidade da fonte*/
+	margin-left: 10px;/*margem esquerda*/
+}
+
+/*.embrulho .diferenciar .esquecido*/
+.wrapper .dif .forgot{
+	font-size: 12px;/*tamanho da fonte*/
+	text-align: center;/*alinhamento de texto*/
+	margin-top: 20px;/*margem superior*/
+}
+
+/*.embrulho .diferenciar .esquecido âncora*/
+.wrapper .dif .forgot a{
+	color: #003569;/*cor*/
+}
+
+/*.embrulho .inscrever-se*/
+.wrapper .signup{
+	margin: 10px 0 20px;/*margem*/
+	padding: 25px 40px;/*define uma a distância entre o conteúdo de um elemento*/
+	text-align: center;/*alinhamento de texto*/
+	color: #262626;/*cor*/
+}
+
+/*.embrulho .inscrever-se âncora*/
+.wrapper .signup a{
+	color: #3897f0;/*cor*/
+}
+/*.embrulho .apps*/
+.wrapper .apps{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	text-align: center;/*alinhamento de texto*/
+	color: #262626;/*cor*/
+}
+/*.embrulho .apps parágrafo*/
+.wrapper .apps p{
+	margin-bottom: 20px;/*margem inferior*/
+}
+/*.embrulho .apps âncora imagem*/
+.wrapper .apps a img{
+	width: 135px;/*largura*/
+	height: 40px;/*altura*/
+	margin: 0 5px;/*margem*/
+}
+/*.rodapé*/
+.footer{
+	display: flex;
+    align-items: center;
+    justify-content: center;/*justificar-conteúdo: centro*/
+	flex-wrap: wrap;
+	width: 90%;/*largura*/
+	margin: 0 auto;/*margem*/
+	padding: 25px 0;/*define uma a distância entre o conteúdo de um elemento*/
+	text-align: center;/*alinhamento de texto*/
+	
+}
+/*.rodapé .links ul li*/
+.footer .links ul li{
+	display: inline-block;/*exibição: bloco embutido*/
+	margin-right: 15px;/*margem direita*/
+	margin-bottom: 10px;
+}
+/*.rodapé .links ul li âncora*/
+.footer .links ul li a{
+	color: #8e8e8e;/*cor*/
+	font-size: 12px;/*tamanho da fonte*/
+}
+/*.rodapé .direito autoral*/
+.footer .copyright{
+	font-size: 12px;/*tamanho da fonte*/
+	padding: 10px 0;/*define uma a distância entre o conteúdo de um elemento*/
+	color: #8e8e8e;/*cor*/
+}
+.footer .idioma{
+	font-size: 12px;/*tamanho da fonte*/
+	padding: 10px 0;/*define uma a distância entre o conteúdo de um elemento*/
+	color: #8e8e8e;/*cor*/
+	margin-right: 15px;/*margem direita*/
+	cursor: pointer; /*cursor: ponteiro*/
+    border: none;/*borda: nenhuma*/
+}
+
+/* Responsividade da tela */
+@media (max-width: 1024px){
+    .wrapper{
+        width: 90%;
+    }
+}
+@media (max-width: 780px){
+    
+    .wrapper{
+        width: 90%;
+    }
+    .block-phone{
+        display: none;
+    }
+    .block-login{
+        width: 100%;
+    }
+	
+}
+@media(max-width: 450px){
+	body{
+		background-color: transparent;
+	}
+	.wrapper {
+		background-color: transparent;
+		border: none;
+	}
+	.idioma{
+		background-color: transparent;
+	}
+}
